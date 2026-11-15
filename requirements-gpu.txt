@@ -1,0 +1,19 @@
+# Optional CUDA GPU dependencies for PSF-match.
+#
+# Install these in addition to requirements.txt to enable GPU
+# acceleration.  All three libraries are optional: the pipeline runs
+# in a fully functional CPU-only mode without them.
+#
+# Choose the CuPy wheel that matches your CUDA version, e.g.:
+#
+#   pip install cupy-cuda12x      # for CUDA 12.x
+#   pip install cupy-cuda13x      # for CUDA 13.x
+#
+# See https://docs.cupy.dev/en/stable/install.html for details.
+#
+# The lines below install the CUDA 12.x wheel by default; adjust as
+# needed for your environment.
+
+cupy-cuda12x>=14.1
+numba>=0.66
+torch>=2.13
